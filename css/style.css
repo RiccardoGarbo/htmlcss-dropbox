@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 body {
@@ -11,6 +12,7 @@ body {
 /*Utils*/
 .border {
     border: 1px dashed black;
+
 }
 
 header {
@@ -21,9 +23,25 @@ header {
 }
 
 main {
-    padding-top: 100px;
+    padding-top: 60px;
 }
 
+.container-big {
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.container-small {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+/*HEADER*/
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -36,28 +54,15 @@ main {
     background-color: gray;
 }
 
+/*MAIN*/
 .bg-description {
     background-color: rgb(98, 170, 238);
 }
 
 h1 {
     font-size: 3.5rem;
-
-}
-
-.container-big {
-    max-width: 1280px;
-    margin: 0 auto;
-
-}
-
-.container-small {
-    max-width: 920px;
-}
-
-section {
-    height: 1000px;
-    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 40px;
 }
 
 .content {
@@ -90,5 +95,97 @@ section {
 }
 
 h2 {
+    font-size: 2.0rem;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
     text-align: center;
+    line-height: 15px;
+}
+
+.blue-border {
+    border: 3px solid blue;
+
+}
+
+.fake-buttons {
+    margin-top: 30px;
+}
+
+.month-button {
+    margin-right: 30px;
+    display: inline-block;
+
+}
+
+.year-button {
+    display: inline-block;
+}
+
+.choose-plans {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 40px;
+
+
+}
+
+.plan-col {
+    flex-basis: calc(100% / 3 - 100px /3);
+}
+
+.plan-row {
+    flex-basis: 100%;
+}
+
+.block {
+    display: block;
+}
+
+.type-plan {
+    text-align: center;
+    position: relative;
+}
+
+.level-plan {
+    padding: 30px 0;
+    line-height: 30px;
+
+}
+
+
+.card {
+    padding: 10px 20px;
+}
+
+.card-top {
+    margin-bottom: 50px;
+}
+
+li {
+    padding: 15px 0px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.sell-office {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    color: white;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.plan-row {
+    position: relative;
 }
