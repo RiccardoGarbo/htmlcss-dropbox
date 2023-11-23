@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Utils*/
+.border {
+    border: 1px dashed black;
+}
+
+header {
+    height: 80px;
+    position: fixed;
+    width: 100%;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+.bg-scheletro {
+    background-color: gray;
+}
