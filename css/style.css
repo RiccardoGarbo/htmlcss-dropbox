@@ -39,6 +39,7 @@ main {
 
 section {
     margin-bottom: 50px;
+    padding: 50px 0px;
 }
 
 /*HEADER*/
@@ -126,6 +127,7 @@ h2 {
     display: inline-block;
 }
 
+/*SECTION PRICEPLAN*/
 .choose-plans {
     display: flex;
     flex-wrap: wrap;
@@ -188,4 +190,30 @@ h3 {
 
 .plan-row {
     position: relative;
+}
+
+.found-partner {
+    display: flex;
+    height: 500px;
+}
+
+.photo-content {
+    flex-basis: 65%;
+}
+
+.partner-details {
+    flex-basis: 35%;
+}
+
+/*business*/
+
+.business-option {
+    display: flex;
+    flex-wrap: wrap;
+    height: 1000px;
+    gap: 20px
+}
+
+.business-option-col {
+    flex-basis: calc(100% / 3 - 40px / 3);
 }
