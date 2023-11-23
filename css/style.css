@@ -42,6 +42,22 @@ section {
     padding: 50px 0px;
 }
 
+/*Personalizzazione LINK*/
+.linkhead {
+    text-decoration: none;
+    color: rgb(146, 144, 144)
+}
+
+.link-boxblue {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+
+}
+
+
+
 /*HEADER*/
 .navbar {
     display: flex;
@@ -49,11 +65,23 @@ section {
     align-items: center;
     width: 100%;
     height: 60px;
+    padding: 0px 20px;
 }
 
-.bg-scheletro {
-    background-color: gray;
+.nav-left {
+    display: flex;
+    align-items: center;
 }
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+
+
+
 
 /*MAIN*/
 .bg-description {
