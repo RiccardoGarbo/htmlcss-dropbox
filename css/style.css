@@ -20,6 +20,10 @@ header {
 
 }
 
+main {
+    padding-top: 100px;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -30,4 +34,61 @@ header {
 
 .bg-scheletro {
     background-color: gray;
+}
+
+.bg-description {
+    background-color: rgb(98, 170, 238);
+}
+
+h1 {
+    font-size: 3.5rem;
+
+}
+
+.container-big {
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.container-small {
+    max-width: 920px;
+}
+
+section {
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    gap: 10px;
+
+}
+
+.description-product {
+    flex-basis: 30%;
+}
+
+.img-product {
+    flex-basis: 70%;
+}
+
+.p-description,
+.button {
+    margin-bottom: 15px;
+}
+
+#reject {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.fa-arrow-down {
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
 }
