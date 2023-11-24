@@ -5,9 +5,8 @@
     padding: 0;
 }
 
-main {
-    padding-top: 60px;
-}
+/*Utils*/
+
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -15,19 +14,24 @@ body {
 
 img {
     width: 100%;
+    height: auto;
     display: block;
 }
 
-/*Utils*/
 .border {
-    border: 1px dashed black;
-
+    border: 1px solid black;
 }
 
 /* Dimensioni container small e big*/
 .container-big {
     max-width: 1280px;
     margin: 0 auto;
+    position: relative;
+
+}
+
+.border-color {
+    border: 1px solid #D0D0D3
 }
 
 .container-small {
@@ -37,50 +41,61 @@ img {
 
 
 /*Personalizzazione LINK*/
-.linkhead {
-    text-decoration: none;
-    color: rgb(146, 144, 144)
-}
+
 
 .link-boxblue {
-    background-color: blue;
+    background-color: #0061FF;
     color: white;
-    padding: 10px 15px;
+    padding: 5px 15px;
     text-decoration: none;
+
 }
 
-/*Impostazioni UL navbar*/
-.ul-navbar {
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
-}
+
+
+
+
 
 /*colori background*/
-
 .bg-azure {
-    background-color: rgb(111, 163, 212);
+    background-color: #B4D0E7;
 }
 
 /*HEADER*/
 header {
     height: 60px;
-    position: fixed;
+    position: sticky;
+    top: 0;
+    left: 0;
     width: 100%;
     background-color: white;
-    z-index: 2;
-}
-
-.navbar {
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 60px;
+    height: 80px;
     padding: 0px 20px;
 }
 
+header ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+
 /*MAIN sezione introduttiva*/
+.introduction .container-big {
+    position: relative;
+    top: 100px
+}
+
 .content-introduction {
     display: flex;
     gap: 10px;
@@ -88,46 +103,40 @@ header {
 
 .introduction-product {
     flex-basis: 30%;
-    position: relative;
 }
 
 .box-introductive-img {
     flex-basis: 70%;
 }
 
-.introductive-img {
-    scale: 1.3;
-    position: relative;
-    left: 74px;
-    top: 60px;
+.free-trial {
+    display: inline-block;
 }
 
-.p-introduction,
-.free-trial {
-    margin-bottom: 30px;
+.introduction-product p {
+    margin-bottom: 25px;
+}
+
+.introduction a {
+    margin-bottom: 25px;
 }
 
 .fa-arrow-down {
-    font-size: 2.5rem;
-    position: absolute;
-    bottom: 10px;
+    margin-top: 100px;
 }
 
 /*Sezione Priceplan*/
 .priceplan {
-    margin-top: 200px
+    margin-top: 150px
 }
 
+/*Titolo inizio pagina*/
 h1 {
     font-size: 3.5rem;
-    padding-top: 50px;
-    padding-bottom: 40px;
+    margin-bottom: 50px;
 }
 
-h2 {
-    font-size: 2.0rem;
-}
-
+/*cerchi fatturazione*/
 .circle {
     width: 15px;
     height: 15px;
@@ -136,9 +145,6 @@ h2 {
     text-align: center;
     line-height: 15px;
 }
-
-
-
 
 .blue-border {
     border: 3px solid blue;
@@ -159,7 +165,6 @@ h2 {
     display: inline-block;
 }
 
-/*Dimensioni colonne*/
 .choose-plans {
     display: flex;
     flex-wrap: wrap;
@@ -168,39 +173,63 @@ h2 {
 }
 
 
+/*Dimensioni colonne*/
 .plan-col {
     flex-basis: calc(100% / 3 - 100px / 3);
-    box-shadow: 0cap;
+    border: 1px solid #D0D0D3;
+
 }
 
 .plan-row {
     flex-basis: 100%;
 }
 
-/*Impostazioni UL in colonna*/
-.ul-col {
+/*lista colonne*/
+.card ul {
     list-style-type: none;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .button-trial {
     margin-bottom: 25px;
 }
 
-.fa-check {
-    color: blue;
-
+.button-trial a {
+    background-color: #0061FF;
+    padding: 10px 0;
+    display: block;
+    text-decoration: none;
+    color: white;
 }
 
+.fa-check {
+    color: blue;
+}
 
-.block {
-    display: block;
+/*riga larga*/
+.plan-row {
+    position: relative;
+}
+
+.plan-row a {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .type-plan {
     text-align: center;
-    position: relative;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 1px solid #D0D0D3;
+
+
 }
+
+h2 {
+    margin-top: 25px;
+}
+
 
 .level-plan {
     padding: 30px 0;
@@ -208,41 +237,59 @@ h2 {
 
 }
 
-
-.card {
-    padding: 10px 20px;
-}
-
-.card-top {
+.card-top,
+.card-bottom {
+    padding: 10px 30px;
     margin-bottom: 50px;
 }
 
-li {
-    padding: 15px 0px;
+.button-trial {
+    text-align: center;
+}
+
+.card li {
+    margin-bottom: 20px;
 }
 
 h3 {
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.sell-office {
-    position: absolute;
-    top: 40px;
-    right: 20px;
-    color: white;
+h5 {
+    margin-bottom: 20px;
 }
 
-.bg-blue {
-    background-color: blue;
-}
-
+/*Plan price ROW*/
 .plan-row {
+    margin-bottom: 150px;
+}
+
+.plan-row .card-row {
+    padding: 30px 30px;
+}
+
+.plan-row h5 {
+    margin-bottom: 50px;
+}
+
+.plan-row .card-row {
     position: relative;
 }
 
+.card-row a {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    padding: 10px 40px;
+
+}
+
+/*SEZIONE TROVA PARTNER*/
 .found-partner {
     display: flex;
-    height: 500px;
+    margin-bottom: 150px;
+    gap: 50px;
 }
 
 .photo-content {
@@ -251,7 +298,25 @@ h3 {
 
 .partner-details {
     flex-basis: 35%;
+    padding-top: 50px;
 }
+
+.partner-details h3 {
+    margin-bottom: 20px;
+}
+
+.partner-details p {
+    margin-bottom: 50px;
+}
+
+.partner-details a {
+    padding: 10px 10px;
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+
 
 /*business*/
 
