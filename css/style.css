@@ -14,7 +14,6 @@ body {
 
 img {
     width: 100%;
-    height: auto;
     display: block;
 }
 
@@ -130,11 +129,17 @@ header a {
     margin-top: 150px
 }
 
-/*Titolo inizio pagina*/
+/*Titoli*/
 h1 {
     font-size: 3.5rem;
     margin-bottom: 50px;
 }
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
 
 /*cerchi fatturazione*/
 .circle {
@@ -317,16 +322,111 @@ h5 {
 }
 
 
-
 /*business*/
 
 .business-option {
     display: flex;
     flex-wrap: wrap;
-    height: 1000px;
     gap: 20px
 }
 
 .business-option-col {
     flex-basis: calc(100% / 3 - 40px / 3);
+}
+
+.card-business p {
+    margin-top: 30px;
+}
+
+.dropbox-business {
+    margin-bottom: 200px;
+}
+
+.users-number {
+    margin-bottom: 200px;
+    padding-right: 300px;
+}
+
+.sponsor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+
+}
+
+.sponsor-col {
+    flex-basis: calc(100% / 3);
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0;
+
+
+}
+
+.sponsor-undercol {
+    flex-basis: calc(100% / 2);
+
+}
+
+.sponsor-undercol img {
+    width: 100%;
+    display: block;
+    height: 300px;
+    padding: 75px;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+/*Sfondi-sponsor*/
+.bg-green {
+    background-color: #A2D39B;
+}
+
+.bg-darkviolet {
+    background-color: #61082B;
+}
+
+.bg-crearblue {
+    background-color: #0093CE;
+}
+
+.bg-orangered {
+    background-color: #FF1C1C;
+}
+
+.bg-red {
+    background-color: #D5001F;
+}
+
+.bg-gray {
+    background-color: #B4D0E7;
+}
+
+.bg-blue {
+    background-color: #0D2481;
+}
+
+.bg-yellow {
+    background-color: #FFD830;
+
+}
+
+#sponsor-big-col img {
+    height: 100px;
+    margin-right: 250px;
+    margin-bottom: 30px;
+
+}
+
+#sponsor-big-col {
+    padding: 30px;
+    background-color: #F5F5F5;
+
+}
+
+#sponsor-big-col address {
+    position: relative;
+    bottom: 40px;
 }
