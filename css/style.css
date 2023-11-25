@@ -45,7 +45,7 @@ img {
 .link-boxblue {
     background-color: #0061FF;
     color: white;
-    padding: 5px 15px;
+    padding: 8px 15px;
     text-decoration: none;
 
 }
@@ -131,7 +131,7 @@ header a {
 
 /*Titoli*/
 h1 {
-    font-size: 3.5rem;
+    font-size: 5rem;
     margin-bottom: 50px;
 }
 
@@ -347,6 +347,7 @@ h5 {
     padding-right: 300px;
 }
 
+/*Sponsor*/
 .sponsor {
     display: flex;
     flex-wrap: wrap;
@@ -358,7 +359,7 @@ h5 {
     flex-basis: calc(100% / 3);
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 0;
+
 
 
 }
@@ -369,10 +370,8 @@ h5 {
 }
 
 .sponsor-undercol img {
-    width: 100%;
-    display: block;
     height: 300px;
-    padding: 75px;
+    padding: 70px;
 }
 
 .invert {
@@ -413,20 +412,49 @@ h5 {
 
 }
 
+/*COLONNA GRANDE-SPONSOR*/
 #sponsor-big-col img {
-    height: 100px;
-    margin-right: 250px;
-    margin-bottom: 30px;
+    height: 90px;
+    position: relative;
+    right: 140px;
 
 }
 
 #sponsor-big-col {
-    padding: 30px;
+    padding: 50px 30px;
     background-color: #F5F5F5;
 
 }
 
-#sponsor-big-col address {
+/*FREETRIAL DropBox*/
+.freetrial-db {
+    background-color: #B4D0E7;
+    height: 350px;
+
+}
+
+.freetrial-db .container-small {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.freetrial-db-container h2 {
+    flex-basis: 75%;
+    padding-right: 200px;
+    color: #61082B;
+
+}
+
+.freetrial-db-container a {
+    flex-basis: 25%;
+    background-color: white;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    text-align: center;
     position: relative;
-    bottom: 40px;
+    bottom: 30px;
+
 }
