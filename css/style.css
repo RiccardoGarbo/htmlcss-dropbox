@@ -51,9 +51,11 @@ img {
     color: white;
     padding: 8px 15px;
     text-decoration: none;
-
 }
 
+footer {
+    background-color: black;
+}
 
 
 
@@ -475,7 +477,8 @@ h5 {
 
 /*frequent questions*/
 .frequent-question {
-    padding: 100px 0;
+    padding: 50px 0px;
+    margin-bottom: 50px;
 }
 
 .frequent-question h2 {
@@ -492,9 +495,48 @@ h5 {
     border-bottom: 1px solid #D0D0D3;
     display: flex;
     justify-content: space-between;
-
 }
 
 .fa-chevron-down {
     padding-right: 40px;
+}
+
+/*FOOTER LINKS*/
+footer {
+    background-color: black;
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    flex-basis: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 100px;
+
+}
+
+.footer-links-col {
+    flex-basis: calc(100% / 5 - 80px / 5);
+}
+
+.footer-links-col ul {
+    list-style-type: none;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+.footer-links-col a {
+    color: white;
+    text-decoration: none;
+}
+
+.select-language {
+    color: #999999;
+    margin-top: 60px;
+    padding-top: 40px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+    border-top: 1px solid white;
+
 }
