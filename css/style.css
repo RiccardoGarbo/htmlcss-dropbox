@@ -10,6 +10,15 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+    font-weight: bold;
 }
 
 img {
@@ -53,9 +62,7 @@ img {
     text-decoration: none;
 }
 
-footer {
-    background-color: black;
-}
+
 
 
 
@@ -93,6 +100,12 @@ header a {
     text-decoration: none;
     color: black;
 }
+
+header li {
+    padding: 28px 0;
+}
+
+
 
 
 /*MAIN sezione introduttiva*/
@@ -211,6 +224,10 @@ h2 {
     display: block;
     text-decoration: none;
     color: white;
+}
+
+.button-trial a:hover {
+    filter: brightness(200%);
 }
 
 .fa-check {
@@ -382,12 +399,17 @@ h5 {
 
 .sponsor-undercol {
     flex-basis: calc(100% / 2);
+    border: 20px solid transparent;
 
 }
 
 .sponsor-undercol img {
     height: 300px;
     padding: 70px;
+}
+
+.sponsor-undercol img:hover {
+    scale: 1.4;
 }
 
 .invert {
@@ -439,6 +461,10 @@ h5 {
 #sponsor-big-col {
     padding: 50px 30px;
     background-color: #F5F5F5;
+
+
+
+
 
 }
 
@@ -539,4 +565,22 @@ footer {
     margin-bottom: 30px;
     border-top: 1px solid white;
 
+}
+
+
+/*BONUS*/
+header li:hover {
+    border-bottom: 3px solid black;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.sponsor-undercol:hover {
+    border: 20px solid rgba(255, 255, 255, 0.5);
+}
+
+.link-boxblue:hover {
+    filter: brightness(200%);
 }
