@@ -507,24 +507,33 @@ h5 {
     margin-bottom: 50px;
 }
 
+.question p {
+    display: none;
+}
+
 .frequent-question h2 {
     border-bottom: 1px solid #D0D0D3;
     padding-bottom: 50px;
+}
+
+.frequent-question h4 {
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 .frequent-question ul {
     list-style-type: none;
 }
 
-.frequent-question li {
+.frequent-question div {
     padding: 40px 0;
     border-bottom: 1px solid #D0D0D3;
-    display: flex;
-    justify-content: space-between;
+    position: relative;
 }
 
 .fa-chevron-down {
-    padding-right: 40px;
+    position: absolute;
+    right: 10px;
 }
 
 /*FOOTER LINKS*/
@@ -583,4 +592,16 @@ footer a:hover {
 
 .link-boxblue:hover {
     filter: brightness(200%);
+}
+
+.ciaociao .caio {
+    display: none;
+}
+
+.question-answer p {
+    display: none;
+}
+
+.question-answer:hover p {
+    display: block;
 }
